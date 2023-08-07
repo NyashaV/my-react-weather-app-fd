@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import CurrentCity from "./CurrentCity";
+import Forecast from "./Forecast";
+import Footer from "./Footer";
+import FormSearch from "./FormSearch";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlassLocation } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body className="App">
+      <div id="pageoutline">
+        <FontAwesomeIcon
+          className="searchIcon"
+          icon={faMagnifyingGlassLocation}
+        />{" "}
+        <FormSearch />
+        <div className="moving">
+          <CurrentCity />
+        </div>{" "}
+        <hr className="pagedivideone" />
+        <hr className="pagedividetwo" />
+        <Forecast />
+        <Footer />
+      </div>
+    </body>
   );
 }
-
-export default App;

@@ -1,0 +1,40 @@
+.forecastDay {
+  width: 60px;
+}
+
+.placeholderForecast {
+  position: relative;
+  left: 20px;
+  top: 50px;
+}
+
+#forecast {
+  font-size: 45px;
+  text-align: center;
+  position: relative;
+  top: -350px;
+  left: -250px;
+}
+
+.forecastDay {
+  position: relative;
+  left: 270px;
+  top: 20px;
+  font-size: 20px;
+}
+
+#forecast-icon {
+  position: relative;
+  top: 10px;
+  left: 250px;
+}
+
+.forecastTemps {
+  font-size: 15px;
+  position: relative;
+  top: 10px;
+  left: 265px;
+}
+.forecastTempMin {
+  opacity: 0.5;
+}

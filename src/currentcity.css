@@ -1,0 +1,68 @@
+#weathercity {
+  height: 150px;
+  width: 370px;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
+
+#weatherdate {
+  text-align: center;
+  position: relative;
+  top: -166px;
+  left: 427px;
+  height: 150px;
+  width: 150px;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
+
+.tempratureChanges {
+  position: relative;
+  left: 65px;
+  top: 5px;
+  font-size: 40px;
+}
+
+.tempratureChanges .active {
+  color: black;
+  cursor: default;
+}
+
+.tempratureChanges .active:hover {
+  text-decoration: none;
+}
+
+.tempconversion {
+  font-size: 18px;
+  position: relative;
+  top: -12px;
+}
+
+.description {
+  text-transform: capitalize;
+}
+
+#icon {
+  position: relative;
+  left: -10px;
+  top: -280px;
+  font-size: 65px;
+}
+
+#weatherdate {
+  text-align: center;
+  position: relative;
+  top: -166px;
+  left: 427px;
+}
+
+#weatherstats {
+  height: 80px;
+  width: 160px;
+  position: relative;
+  top: -369px;
+  left: 204px;
+  font-size: 18px;
+  text-align: left;
+  color: #12a3b8;
+}

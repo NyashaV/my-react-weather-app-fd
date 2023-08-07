@@ -1,0 +1,25 @@
+#formsearch {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.searchAction {
+  text-align: center;
+  font-size: 20px;
+}
+
+.citySearch {
+  text-align: left;
+  position: relative;
+  left: 0px;
+  width: 90px;
+}
+
+.searchlocation {
+  text-align: left;
+  position: relative;
+  width: 150px;
+  left: 0px;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}

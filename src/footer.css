@@ -1,0 +1,13 @@
+.weatherwebsite {
+  position: relative;
+  top: -270px;
+  left: 495px;
+  font-size: 1rem;
+}
+
+.githublink {
+  text-align: center;
+  display: block;
+  position: relative;
+  top: -250px;
+}
