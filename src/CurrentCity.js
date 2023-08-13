@@ -3,15 +3,17 @@ import "./currentcity.css";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 
 export default function CurrentCity(props) {
   // const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState({ loaded: false });
 
   function displayWeather(response) {
+    console.log(response.data);
     setWeatherData({
       loaded: true,
-      date: "Saturday 11:00",
+      date: new Date(response.data.time * 1000),
       city: response.data.city,
       temperature: response.data.temperature.current,
       description: response.data.condition.description,
@@ -51,7 +53,7 @@ export default function CurrentCity(props) {
         >
           <h3 className="dayTimeHeading" id="date-time">
             {" "}
-            {weatherData.date}
+            <FormatDate date={weatherData.date} />
             <hr />
           </h3>
           <h5 className="description">{weatherData.description}</h5>

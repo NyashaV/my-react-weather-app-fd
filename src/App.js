@@ -8,7 +8,7 @@ import { faMagnifyingGlassLocation } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
-    <body className="App">
+    <div className="App">
       <div id="pageoutline">
         <FontAwesomeIcon
           className="searchIcon"
@@ -16,13 +16,13 @@ export default function App() {
         />{" "}
         <FormSearch />
         <div className="moving">
-          <CurrentCity defaultCity="Montreal" />
+          <CurrentCity defaultCity="Hiroshima" />
         </div>{" "}
         <hr className="pagedivideone" />
         <hr className="pagedividetwo" />
         <Forecast />
         <Footer />
       </div>
-    </body>
+    </div>
   );
 }
