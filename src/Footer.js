@@ -19,9 +19,19 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Open source code
+          Open-sourced on GitHub
         </a>
-        <span> by Nyasha Tavatya </span>
+        <div>
+          {" "}
+          Coded by{" "}
+          <a
+            href="https://www.linkedin.com/in/nyasha-tavatya-534581204/?originalSubdomain=uk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Nyasha Tavatya{" "}
+          </a>{" "}
+        </div>
       </div>
     </div>
   );

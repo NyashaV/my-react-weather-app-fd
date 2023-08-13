@@ -16,7 +16,7 @@ export default function App() {
         />{" "}
         <FormSearch />
         <div className="moving">
-          <CurrentCity />
+          <CurrentCity defaultCity="Montreal" />
         </div>{" "}
         <hr className="pagedivideone" />
         <hr className="pagedividetwo" />
