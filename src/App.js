@@ -1,5 +1,5 @@
 import "./App.css";
-import CurrentCity from "./CurrentCity";
+// import CurrentCity from "./CurrentCity";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 import FormSearch from "./FormSearch";
@@ -14,9 +14,9 @@ export default function App() {
           className="searchIcon"
           icon={faMagnifyingGlassLocation}
         />{" "}
-        <FormSearch />
+        <FormSearch defaultCity="Hiroshima" />
         <div className="moving">
-          <CurrentCity defaultCity="Hiroshima" />
+          {/* <CurrentCity defaultCity="Hiroshima" /> */}
         </div>{" "}
         <hr className="pagedivideone" />
         <hr className="pagedividetwo" />
