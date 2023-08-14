@@ -1,3 +1,8 @@
+div .CurrentCity {
+  position: relative;
+  top: 20px;
+}
+
 #weathercity {
   height: 150px;
   width: 370px;
