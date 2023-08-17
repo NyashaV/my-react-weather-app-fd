@@ -1,5 +1,5 @@
 import "./App.css";
-import Forecast from "./Forecast";
+// import Forecast from "./Forecast";
 import Footer from "./Footer";
 import FormSearch from "./FormSearch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +16,7 @@ export default function App() {
         <FormSearch defaultCity="Hiroshima" />
         <div className="moving"></div> <hr className="pagedivideone" />
         <hr className="pagedividetwo" />
-        <Forecast />
+        {/* <Forecast /> */}
         <Footer />
       </div>
     </div>

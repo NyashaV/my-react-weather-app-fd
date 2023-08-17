@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import axios from "axios";
 import CurrentCity from "./CurrentCity";
+import Forecast from "./Forecast";
 
 export default function FormSearch(props) {
   const [weatherData, setWeatherData] = useState({ loaded: false });
@@ -17,6 +18,7 @@ export default function FormSearch(props) {
     console.log(response.data);
     setWeatherData({
       loaded: true,
+      coordinates: response.data.coordinates,
       date: new Date(response.data.time * 1000),
       city: response.data.city,
       temperature: response.data.temperature.current,
@@ -76,6 +78,7 @@ export default function FormSearch(props) {
           </Form>
         </Container>
         <CurrentCity data={weatherData} />
+        <Forecast data={weatherData} coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

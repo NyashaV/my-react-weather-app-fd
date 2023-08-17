@@ -4,12 +4,12 @@
 
 .placeholderForecast {
   position: relative;
-  left: 20px;
-  top: 50px;
+  left: 0px;
+  top: 55px;
 }
 
 #forecast {
-  font-size: 45px;
+  width: 110px;
   text-align: center;
   position: relative;
   top: -350px;
@@ -26,14 +26,15 @@
 #forecast-icon {
   position: relative;
   top: 10px;
-  left: 250px;
+  left: 255px;
+  width: 60px;
 }
 
 .forecastTemps {
   font-size: 15px;
   position: relative;
   top: 10px;
-  left: 265px;
+  left: 255px;
 }
 .forecastTempMin {
   opacity: 0.5;
