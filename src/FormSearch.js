@@ -15,7 +15,6 @@ export default function FormSearch(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function displayWeather(response) {
-    console.log(response.data);
     setWeatherData({
       loaded: true,
       coordinates: response.data.coordinates,

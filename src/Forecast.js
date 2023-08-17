@@ -21,7 +21,6 @@ export default function Forecast(props) {
   }
 
   if (loaded) {
-    console.log(forecast);
     return (
       <Container>
         <Row className="placeholderForecast">
@@ -47,6 +46,6 @@ export default function Forecast(props) {
 
     axios.get(apiUrl).then(handleResponse);
 
-    return <h1>Forecast loading</h1>;
+    return null;
   }
 }
